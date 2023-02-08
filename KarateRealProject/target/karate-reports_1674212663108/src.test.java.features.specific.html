@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.identify("ec1f3911-9ee8-4aa5-af8c-4d98b0dc6f6d",{name:"Admin"});
+    posthog.capture("report_feature",{karate_version:"1.4.0.RC3",karate_meta:null});
+  }
+});
+</script>
+
+    <title>src.test.java.features.specific</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2023-01-20 04:32:10 pm</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1:3]"><span>[1:3]</span> <span>get user by gender</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/features/specific.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">validate users by specific values</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:3]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:3]</span>
+                <span class="scenario-name">get user by gender</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>1600</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref passed">4</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://gorest.co.in//public/v2/users&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">86</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref passed">5</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>params gender = &#39;male&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">9</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">16:32:09.070 did not evaluate to map gender = &#39;male&#39;: [type: STRING, value: male]
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref passed">6</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1381</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6">16:32:09.523 request:
+1 &gt; GET https://gorest.co.in//public/v2/users
+1 &gt; Host: gorest.co.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.3)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+16:32:10.392 response time in milliseconds: 853
+1 &lt; 200
+1 &lt; Date: Fri, 20 Jan 2023 11:02:10 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Cache-Control: max-age=0, private, must-revalidate
+1 &lt; etag: W/&quot;94fd11b5d606ed0e596f2c87ffa0d2fc&quot;
+1 &lt; referrer-policy: strict-origin-when-cross-origin
+1 &lt; vary: Origin
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-download-options: noopen
+1 &lt; x-frame-options: SAMEORIGIN
+1 &lt; x-links-current: https://gorest.co.in/public/v2/users?page=1
+1 &lt; x-links-next: https://gorest.co.in/public/v2/users?page=2
+1 &lt; x-links-previous: 
+1 &lt; x-pagination-limit: 10
+1 &lt; x-pagination-page: 1
+1 &lt; x-pagination-pages: 247
+1 &lt; x-pagination-total: 2465
+1 &lt; x-permitted-cross-domain-policies: none
+1 &lt; x-request-id: 0e3f34d6-497f-4d20-b505-bd522bc4e86b
+1 &lt; x-runtime: 0.022342
+1 &lt; x-xss-protection: 0
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=xJjKGiOIJPH7hnXUMbh824tkBL2zEtXinyKKKuE%2FW2%2BFIDlF%2BVh%2BAB9ABQiPE746z8vND0%2FulugVE2PDrnrxoGhys8PUbSG82opd92eD20fxRPn0Eb%2BfesHMSXDF7jY%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 78c750fbbb5585bf-BOM
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
+[{&quot;id&quot;:3183,&quot;name&quot;:&quot;Gauranga Khan&quot;,&quot;email&quot;:&quot;khan_gauranga@ortiz.io&quot;,&quot;gender&quot;:&quot;female&quot;,&quot;status&quot;:&quot;inactive&quot;},{&quot;id&quot;:3182,&quot;name&quot;:&quot;Adhiraj Pilla&quot;,&quot;email&quot;:&quot;adhiraj_pilla@maggio.org&quot;,&quot;gender&quot;:&quot;male&quot;,&quot;status&quot;:&quot;inactive&quot;},{&quot;id&quot;:3181,&quot;name&quot;:&quot;Swarnalata Mehrotra&quot;,&quot;email&quot;:&quot;mehrotra_swarnalata@mccullough.name&quot;,&quot;gender&quot;:&quot;female&quot;,&quot;status&quot;:&quot;inactive&quot;},{&quot;id&quot;:3180,&quot;name&quot;:&quot;Anala Namboothiri&quot;,&quot;email&quot;:&quot;anala_namboothiri@block.io&quot;,&quot;gender&quot;:&quot;female&quot;,&quot;status&quot;:&quot;inactive&quot;},{&quot;id&quot;:3179,&quot;name&quot;:&quot;Charuchandra Varma&quot;,&quot;email&quot;:&quot;charuchandra_varma@lowe-oreilly.name&quot;,&quot;gender&quot;:&quot;female&quot;,&quot;status&quot;:&quot;active&quot;},{&quot;id&quot;:3178,&quot;name&quot;:&quot;Sher Somayaji&quot;,&quot;email&quot;:&quot;somayaji_sher@crooks.net&quot;,&quot;gender&quot;:&quot;female&quot;,&quot;status&quot;:&quot;active&quot;},{&quot;id&quot;:3177,&quot;name&quot;:&quot;Devangana Pilla&quot;,&quot;email&quot;:&quot;pilla_devangana@stracke-fahey.org&quot;,&quot;gender&quot;:&quot;female&quot;,&quot;status&quot;:&quot;inactive&quot;},{&quot;id&quot;:3176,&quot;name&quot;:&quot;Arya Shah DO&quot;,&quot;email&quot;:&quot;shah_arya_do@mills.org&quot;,&quot;gender&quot;:&quot;female&quot;,&quot;status&quot;:&quot;inactive&quot;},{&quot;id&quot;:3175,&quot;name&quot;:&quot;Mrs. Chakor Reddy&quot;,&quot;email&quot;:&quot;reddy_chakor_mrs@keeling-graham.co&quot;,&quot;gender&quot;:&quot;female&quot;,&quot;status&quot;:&quot;active&quot;},{&quot;id&quot;:3174,&quot;name&quot;:&quot;Som Nayar&quot;,&quot;email&quot;:&quot;som_nayar@harvey-murphy.io&quot;,&quot;gender&quot;:&quot;male&quot;,&quot;status&quot;:&quot;active&quot;}]
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># And print statusline</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">111</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.9">16:32:10.557 [print] [
+  {
+    &quot;id&quot;: 3183,
+    &quot;name&quot;: &quot;Gauranga Khan&quot;,
+    &quot;email&quot;: &quot;khan_gauranga@ortiz.io&quot;,
+    &quot;gender&quot;: &quot;female&quot;,
+    &quot;status&quot;: &quot;inactive&quot;
+  },
+  {
+    &quot;id&quot;: 3182,
+    &quot;name&quot;: &quot;Adhiraj Pilla&quot;,
+    &quot;email&quot;: &quot;adhiraj_pilla@maggio.org&quot;,
+    &quot;gender&quot;: &quot;male&quot;,
+    &quot;status&quot;: &quot;inactive&quot;
+  },
+  {
+    &quot;id&quot;: 3181,
+    &quot;name&quot;: &quot;Swarnalata Mehrotra&quot;,
+    &quot;email&quot;: &quot;mehrotra_swarnalata@mccullough.name&quot;,
+    &quot;gender&quot;: &quot;female&quot;,
+    &quot;status&quot;: &quot;inactive&quot;
+  },
+  {
+    &quot;id&quot;: 3180,
+    &quot;name&quot;: &quot;Anala Namboothiri&quot;,
+    &quot;email&quot;: &quot;anala_namboothiri@block.io&quot;,
+    &quot;gender&quot;: &quot;female&quot;,
+    &quot;status&quot;: &quot;inactive&quot;
+  },
+  {
+    &quot;id&quot;: 3179,
+    &quot;name&quot;: &quot;Charuchandra Varma&quot;,
+    &quot;email&quot;: &quot;charuchandra_varma@lowe-oreilly.name&quot;,
+    &quot;gender&quot;: &quot;female&quot;,
+    &quot;status&quot;: &quot;active&quot;
+  },
+  {
+    &quot;id&quot;: 3178,
+    &quot;name&quot;: &quot;Sher Somayaji&quot;,
+    &quot;email&quot;: &quot;somayaji_sher@crooks.net&quot;,
+    &quot;gender&quot;: &quot;female&quot;,
+    &quot;status&quot;: &quot;active&quot;
+  },
+  {
+    &quot;id&quot;: 3177,
+    &quot;name&quot;: &quot;Devangana Pilla&quot;,
+    &quot;email&quot;: &quot;pilla_devangana@stracke-fahey.org&quot;,
+    &quot;gender&quot;: &quot;female&quot;,
+    &quot;status&quot;: &quot;inactive&quot;
+  },
+  {
+    &quot;id&quot;: 3176,
+    &quot;name&quot;: &quot;Arya Shah DO&quot;,
+    &quot;email&quot;: &quot;shah_arya_do@mills.org&quot;,
+    &quot;gender&quot;: &quot;female&quot;,
+    &quot;status&quot;: &quot;inactive&quot;
+  },
+  {
+    &quot;id&quot;: 3175,
+    &quot;name&quot;: &quot;Mrs. Chakor Reddy&quot;,
+    &quot;email&quot;: &quot;reddy_chakor_mrs@keeling-graham.co&quot;,
+    &quot;gender&quot;: &quot;female&quot;,
+    &quot;status&quot;: &quot;active&quot;
+  },
+  {
+    &quot;id&quot;: 3174,
+    &quot;name&quot;: &quot;Som Nayar&quot;,
+    &quot;email&quot;: &quot;som_nayar@harvey-murphy.io&quot;,
+    &quot;gender&quot;: &quot;male&quot;,
+    &quot;status&quot;: &quot;active&quot;
+  }
+]
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print &quot;-------------------------&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10">16:32:10.564 [print] ------------------------- 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print karate.log(response)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">12</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.11">16:32:10.571 {
+  &quot;id&quot;: 3183,
+  &quot;name&quot;: &quot;Gauranga Khan&quot;,
+  &quot;email&quot;: &quot;khan_gauranga@ortiz.io&quot;,
+  &quot;gender&quot;: &quot;female&quot;,
+  &quot;status&quot;: &quot;inactive&quot;
+}
+ {
+  &quot;id&quot;: 3182,
+  &quot;name&quot;: &quot;Adhiraj Pilla&quot;,
+  &quot;email&quot;: &quot;adhiraj_pilla@maggio.org&quot;,
+  &quot;gender&quot;: &quot;male&quot;,
+  &quot;status&quot;: &quot;inactive&quot;
+}
+ {
+  &quot;id&quot;: 3181,
+  &quot;name&quot;: &quot;Swarnalata Mehrotra&quot;,
+  &quot;email&quot;: &quot;mehrotra_swarnalata@mccullough.name&quot;,
+  &quot;gender&quot;: &quot;female&quot;,
+  &quot;status&quot;: &quot;inactive&quot;
+}
+ {
+  &quot;id&quot;: 3180,
+  &quot;name&quot;: &quot;Anala Namboothiri&quot;,
+  &quot;email&quot;: &quot;anala_namboothiri@block.io&quot;,
+  &quot;gender&quot;: &quot;female&quot;,
+  &quot;status&quot;: &quot;inactive&quot;
+}
+ {
+  &quot;id&quot;: 3179,
+  &quot;name&quot;: &quot;Charuchandra Varma&quot;,
+  &quot;email&quot;: &quot;charuchandra_varma@lowe-oreilly.name&quot;,
+  &quot;gender&quot;: &quot;female&quot;,
+  &quot;status&quot;: &quot;active&quot;
+}
+ {
+  &quot;id&quot;: 3178,
+  &quot;name&quot;: &quot;Sher Somayaji&quot;,
+  &quot;email&quot;: &quot;somayaji_sher@crooks.net&quot;,
+  &quot;gender&quot;: &quot;female&quot;,
+  &quot;status&quot;: &quot;active&quot;
+}
+ {
+  &quot;id&quot;: 3177,
+  &quot;name&quot;: &quot;Devangana Pilla&quot;,
+  &quot;email&quot;: &quot;pilla_devangana@stracke-fahey.org&quot;,
+  &quot;gender&quot;: &quot;female&quot;,
+  &quot;status&quot;: &quot;inactive&quot;
+}
+ {
+  &quot;id&quot;: 3176,
+  &quot;name&quot;: &quot;Arya Shah DO&quot;,
+  &quot;email&quot;: &quot;shah_arya_do@mills.org&quot;,
+  &quot;gender&quot;: &quot;female&quot;,
+  &quot;status&quot;: &quot;inactive&quot;
+}
+ {
+  &quot;id&quot;: 3175,
+  &quot;name&quot;: &quot;Mrs. Chakor Reddy&quot;,
+  &quot;email&quot;: &quot;reddy_chakor_mrs@keeling-graham.co&quot;,
+  &quot;gender&quot;: &quot;female&quot;,
+  &quot;status&quot;: &quot;active&quot;
+}
+ {
+  &quot;id&quot;: 3174,
+  &quot;name&quot;: &quot;Som Nayar&quot;,
+  &quot;email&quot;: &quot;som_nayar@harvey-murphy.io&quot;,
+  &quot;gender&quot;: &quot;male&quot;,
+  &quot;status&quot;: &quot;active&quot;
+}
+ 
+16:32:10.576 [print] null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref failed">12</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>prepresp = response.event.txn_count</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.12">16:32:10.582 src/test/java/features/specific.feature:12
+And prepresp = response.event.txn_count
+no step-definition method match found for: prepresp = response.event.txn_count
+src/test/java/features/specific.feature:12
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref skipped">13</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>print &#39;count is : &#39;,  response.event.txn_count</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref skipped">14</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>print &#39;count is : &#39;,  prepresp</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
